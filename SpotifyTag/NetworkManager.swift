@@ -11,9 +11,12 @@ import Alamofire
 
 class NetworkManager {
     
+    internal let sessionManager:SessionManager
+    static let shared = NetworkManager()
     
-    public func request(url:String, completionHandler:() -> ()) {
-        Alamofire.request(SpotifyBaseEndpoint).responseJSON { response in
-        }
+    private init(){
+        self.sessionManager = SessionManager()
     }
+    
+    
 }

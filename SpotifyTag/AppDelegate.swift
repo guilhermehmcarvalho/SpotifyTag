@@ -32,19 +32,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             auth.handleAuthCallback(withTriggeredAuthURL: url, callback: { (error, session) in
 
                 if error != nil {
-                    print("error!")
+                    print("error! : \(String(describing: error))")
                 }
                 
-                print(session?.accessToken)
+                if let token = session?.accessToken {
+                    NetworkManager.shared.sessionManager.adapter = AccessTokenAdapter(accessToken: token)
+                }
                 
                 // Add session to User Defaults
                 let userDefaults = UserDefaults.standard
                 let sessionData = NSKeyedArchiver.archivedData(withRootObject: session)
                 userDefaults.set(sessionData, forKey: "SpotifySession")
                 userDefaults.synchronize()
-                
-                let url = URL(string:"\(SpotifyBaseEndpoint)/v1/me/albums")
-                SPTRequest.createRequest(for: url!, withAccessToken: session?.accessToken!, httpMethod: String!, values: <#T##Any!#>, valueBodyIsJSON: <#T##Bool#>, sendDataAsQueryString: <#T##Bool#>)
                 
                 //Tell notification center login is successful
                 NotificationCenter.default.post(name: Notification.Name(rawValue: "loginSuccessfull"), object: nil)

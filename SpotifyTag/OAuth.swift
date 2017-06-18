@@ -14,7 +14,7 @@ class OAuth {
     var auth = SPTAuth.defaultInstance()!
     
     internal func authorize(){
-        let scope = [SPTAuthStreamingScope, SPTAuthUserReadPrivateScope, SPTAuthUserReadEmailScope, SPTAuthUserLibraryModifyScope]
+        let scope = [SPTAuthUserLibraryReadScope]
         
         SPTAuth.defaultInstance().clientID = ClientID
         SPTAuth.defaultInstance().redirectURL = URL(string: Config().redirectURI)
@@ -29,14 +29,18 @@ class OAuth {
         }
     }
     
-    /*internal func getAlbums(){
-        let url = "\(SpotifyBaseEndpoint)/v1/me/albums"
+    internal func getAlbums(){
+        let url = "\(SpotifyBaseEndpoint)v1/me/albums"
         
-        let token = SPTAuth.defaultInstance().session.accessToken
-        sessionManager.adapter = AccessTokenAdapter(accessToken: token!)
-        sessionManager.request(url, method: .get).responseString { response in
+        NetworkManager.shared.sessionManager.request(url, method: .get).responseString { response in
+            //print(response)
+        }
+        .responseJSON{ response in
             print(response)
         }
-    }*/
+            .response{ response in
+                //print(response)
+        }
+    }
 
 }
