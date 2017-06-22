@@ -29,18 +29,12 @@ class OAuth {
         }
     }
     
-    internal func getAlbums(){
-        let url = "\(SpotifyBaseEndpoint)v1/me/albums"
-        
-        NetworkManager.shared.sessionManager.request(url, method: .get).responseString { response in
-            //print(response)
-        }
-        .responseJSON{ response in
-            print(response)
-        }
-            .response{ response in
-                //print(response)
-        }
+    internal func logout(viewController:UIViewController) {
+        NetworkManager.shared.sessionManager.adapter = nil
+        KeychainManager().deleteAccessToken()
+        let storyboard = UIStoryboard(name: "Main",bundle: nil)
+        let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginView")
+        viewController.present(loginVC, animated: true)
     }
 
 }

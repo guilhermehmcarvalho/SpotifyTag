@@ -25,9 +25,5 @@ class ViewController: UIViewController {
     @IBAction func login(_ sender: Any) {
         auth.authorize()
     }
-
-    @IBAction func action(_ sender: Any) {
-        auth.getAlbums()
-    }
 }
 

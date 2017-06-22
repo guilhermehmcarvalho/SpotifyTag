@@ -15,6 +15,8 @@
 		140873A91EF6A20D00A191E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140873A71EF6A20D00A191E9 /* LaunchScreen.storyboard */; };
 		146481D81EF6F0BC0028C0B1 /* AccessTokenAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146481D71EF6F0BC0028C0B1 /* AccessTokenAdapter.swift */; };
 		146481DA1EF71C7A0028C0B1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146481D91EF71C7A0028C0B1 /* NetworkManager.swift */; };
+		146481DC1EFC07AF0028C0B1 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146481DB1EFC07AF0028C0B1 /* KeychainManager.swift */; };
+		146481DF1EFC0FDC0028C0B1 /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146481DE1EFC0FDC0028C0B1 /* LoggedInViewController.swift */; };
 		14A09CBB1EF6AA080024C275 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A09CBA1EF6AA080024C275 /* Config.swift */; };
 		14A09CBF1EF6C7E10024C275 /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A09CBE1EF6C7E10024C275 /* OAuth.swift */; };
 		3E0AEC4D3A736F9DF902C44E /* Pods_SpotifyTag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81353DB9695C1EE0049B0C0F /* Pods_SpotifyTag.framework */; };
@@ -31,6 +33,9 @@
 		140873AA1EF6A20D00A191E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		146481D71EF6F0BC0028C0B1 /* AccessTokenAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenAdapter.swift; sourceTree = "<group>"; };
 		146481D91EF71C7A0028C0B1 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		146481DB1EFC07AF0028C0B1 /* KeychainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		146481DD1EFC0BA40028C0B1 /* SpotifyTag.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpotifyTag.entitlements; sourceTree = "<group>"; };
+		146481DE1EFC0FDC0028C0B1 /* LoggedInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
 		14A09CBA1EF6AA080024C275 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		14A09CBE1EF6C7E10024C275 /* OAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth.swift; sourceTree = "<group>"; };
 		3D5A9D1F67A8672D894B36B9 /* Pods-SpotifyTag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyTag.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpotifyTag/Pods-SpotifyTag.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +76,7 @@
 		1408739A1EF6A20D00A191E9 /* SpotifyTag */ = {
 			isa = PBXGroup;
 			children = (
+				146481DD1EFC0BA40028C0B1 /* SpotifyTag.entitlements */,
 				1408739B1EF6A20D00A191E9 /* AppDelegate.swift */,
 				1408739D1EF6A20D00A191E9 /* ViewController.swift */,
 				1408739F1EF6A20D00A191E9 /* Main.storyboard */,
@@ -82,6 +88,8 @@
 				14A09CBE1EF6C7E10024C275 /* OAuth.swift */,
 				146481D71EF6F0BC0028C0B1 /* AccessTokenAdapter.swift */,
 				146481D91EF71C7A0028C0B1 /* NetworkManager.swift */,
+				146481DB1EFC07AF0028C0B1 /* KeychainManager.swift */,
+				146481DE1EFC0FDC0028C0B1 /* LoggedInViewController.swift */,
 			);
 			path = SpotifyTag;
 			sourceTree = "<group>";
@@ -138,8 +146,14 @@
 				TargetAttributes = {
 					140873971EF6A20D00A191E9 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XQLTE359NY;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -233,7 +247,9 @@
 				146481DA1EF71C7A0028C0B1 /* NetworkManager.swift in Sources */,
 				146481D81EF6F0BC0028C0B1 /* AccessTokenAdapter.swift in Sources */,
 				1408739C1EF6A20D00A191E9 /* AppDelegate.swift in Sources */,
+				146481DF1EFC0FDC0028C0B1 /* LoggedInViewController.swift in Sources */,
 				140873A41EF6A20D00A191E9 /* SpotifyTag.xcdatamodeld in Sources */,
+				146481DC1EFC07AF0028C0B1 /* KeychainManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +376,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SpotifyTag/SpotifyTag.entitlements;
+				DEVELOPMENT_TEAM = XQLTE359NY;
 				INFOPLIST_FILE = SpotifyTag/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.gboxx.SpotifyTag;
@@ -377,6 +395,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SpotifyTag/SpotifyTag.entitlements;
+				DEVELOPMENT_TEAM = XQLTE359NY;
 				INFOPLIST_FILE = SpotifyTag/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.gboxx.SpotifyTag;

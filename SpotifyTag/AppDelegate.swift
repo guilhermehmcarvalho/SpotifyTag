@@ -18,12 +18,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         
         auth.redirectURL = URL(string: Config().redirectURI)
         auth.sessionUserDefaultsKey = "current session"
         
         auth.canHandle(auth.redirectURL)
+        
+        // Check token
+        if let token = KeychainManager().getAccessToken() {
+            self.goToMainView()
+            NetworkManager.shared.sessionManager.adapter = AccessTokenAdapter(accessToken: token)
+        }
+        
         return true
     }
     
@@ -36,14 +42,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
                 
                 if let token = session?.accessToken {
+                    KeychainManager().saveAccessToken(token: token)
                     NetworkManager.shared.sessionManager.adapter = AccessTokenAdapter(accessToken: token)
                 }
                 
-                // Add session to User Defaults
-                let userDefaults = UserDefaults.standard
-                let sessionData = NSKeyedArchiver.archivedData(withRootObject: session)
-                userDefaults.set(sessionData, forKey: "SpotifySession")
-                userDefaults.synchronize()
+                // Go to logged in page
+                self.goToMainView()
                 
                 //Tell notification center login is successful
                 NotificationCenter.default.post(name: Notification.Name(rawValue: "loginSuccessfull"), object: nil)
@@ -51,6 +55,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return true
         }
         return false
+    }
+    
+    func goToMainView() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "MainView") as! LoggedInViewController
+        self.window?.rootViewController = vc
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
