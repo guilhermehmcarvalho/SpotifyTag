@@ -12,10 +12,18 @@ class LoggedInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        getAlbums();
 
         // Do any additional setup after loading the view.
+        
+        SpotifyAPIHandler().getMyProfile() {
+            profile in
+            
+            if let name = profile?.display_name {
+                print(name)
+            }
+        }
+        
+        SpotifyAPIHandler().getUsersAlbums()
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,17 +31,8 @@ class LoggedInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    internal func getAlbums(){
-        let url = "\(SpotifyBaseEndpoint)v1/me/albums"
-        
-        NetworkManager.shared.sessionManager.request(url, method: .get)
-            .responseJSON{ response in
-                print(response)
-        }
-    }
-    
     @IBAction func logoff(_ sender: Any) {
-        OAuth().logout(viewController: self)
+        OAuth().logout()
     }
 
     /*

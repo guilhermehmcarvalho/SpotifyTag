@@ -29,12 +29,17 @@ class OAuth {
         }
     }
     
-    internal func logout(viewController:UIViewController) {
+    /// Saves access token to keychain and to network manager session
+    internal func handleAccessToken(token:String){
+        NetworkManager.shared.sessionManager.adapter = AccessTokenAdapter(accessToken: token)
+        KeychainManager().saveAccessToken(token: token)
+    }
+    
+    internal func logout() {
         NetworkManager.shared.sessionManager.adapter = nil
         KeychainManager().deleteAccessToken()
-        let storyboard = UIStoryboard(name: "Main",bundle: nil)
-        let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginView")
-        viewController.present(loginVC, animated: true)
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.goToMainView()
     }
 
 }

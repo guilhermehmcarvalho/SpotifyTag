@@ -15,22 +15,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var auth = SPTAuth()
-    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        // Spotify API
         auth.redirectURL = URL(string: Config().redirectURI)
         auth.sessionUserDefaultsKey = "current session"
         
         auth.canHandle(auth.redirectURL)
         
-        // Check token
+        self.manageSession()
+        
+        return true
+    }
+    
+    private func manageSession() {
+        /*guard let session = SPTAuth.defaultInstance().session else {
+            return
+        }
+        
+        if session.isValid() {
+            if let token = KeychainManager().getAccessToken() {
+                self.goToMainView()
+                NetworkManager.shared.sessionManager.adapter = AccessTokenAdapter(accessToken: token)
+            }
+        }*/
+        
         if let token = KeychainManager().getAccessToken() {
             self.goToMainView()
             NetworkManager.shared.sessionManager.adapter = AccessTokenAdapter(accessToken: token)
         }
         
-        return true
     }
     
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
@@ -42,8 +57,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
                 
                 if let token = session?.accessToken {
-                    KeychainManager().saveAccessToken(token: token)
-                    NetworkManager.shared.sessionManager.adapter = AccessTokenAdapter(accessToken: token)
+                    OAuth().handleAccessToken(token: token)
                 }
                 
                 // Go to logged in page
