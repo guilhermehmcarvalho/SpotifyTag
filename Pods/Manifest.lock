@@ -9,7 +9,6 @@ PODS:
   - Spotify-iOS-SDK/Authentication (0.25.0)
   - Spotify-iOS-SDK/Metadata (0.25.0)
   - Spotify-iOS-SDK/Playback (0.25.0)
-  - SwiftyJSON (3.1.4)
   - Sync (3.2.3)
 
 DEPENDENCIES:
@@ -17,7 +16,6 @@ DEPENDENCIES:
   - Kingfisher (~> 3.0)
   - Locksmith (~> 3.0)
   - Spotify-iOS-SDK
-  - SwiftyJSON (~> 3.1)
   - Sync (~> 3)
 
 SPEC CHECKSUMS:
@@ -25,9 +23,8 @@ SPEC CHECKSUMS:
   Kingfisher: 6729a0baaa458245bfb8cd5a1296c71c10d6eb6c
   Locksmith: 310b4cc5031af5728bf4db5d4de547a5100c6a3b
   Spotify-iOS-SDK: 58d4092b225578623dd17029f3c7e7042ac3ef6e
-  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   Sync: a06a34b46cb2d0e763576278487667f357e8c249
 
-PODFILE CHECKSUM: b48ac08bff5475f6b713a747baa5510f4987b4af
+PODFILE CHECKSUM: d3ecbc135921f6dbb56d123534fe0b702256ef28
 
 COCOAPODS: 1.2.1

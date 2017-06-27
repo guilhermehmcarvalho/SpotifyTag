@@ -69,7 +69,7 @@ class SpotifyAPIHandler{
     }
     
     @discardableResult
-    internal func getUsersAlbums() -> Request {
+    internal func getUsersAlbums(completionHandler:@escaping ([Album]) -> ()) -> Request {
         let url = "\(SpotifyBaseEndpoint)v1/me/albums"
         
         return self.apiGetRequest(url: url) { response in
@@ -82,9 +82,7 @@ class SpotifyAPIHandler{
                     
                     // Convert and return album array to completionHandler
                     if let albums = data as? [Album] {
-                        if let name = albums.last?.name {
-                            print(name)
-                        }
+                        completionHandler(albums)
                     }
                 }
             }

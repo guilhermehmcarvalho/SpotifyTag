@@ -11,7 +11,6 @@ pod 'Alamofire', '~> 4.4'
 pod 'Kingfisher', '~> 3.0'
 pod 'Spotify-iOS-SDK'
 pod 'Locksmith', '~> 3.0'
-pod 'SwiftyJSON', '~> 3.1'
 pod 'Sync', '~> 3'
 
 end

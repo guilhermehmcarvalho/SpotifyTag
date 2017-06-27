@@ -61,7 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
                 
                 // Go to logged in page
-                self.goToMainView()
+                self.goToMainView(animated: false)
                 
                 //Tell notification center login is successful
                 NotificationCenter.default.post(name: Notification.Name(rawValue: "loginSuccessfull"), object: nil)
@@ -71,10 +71,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return false
     }
     
-    func goToMainView() {
+    func goToMainView(animated:Bool = true) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "MainView") as! LoggedInViewController
-        self.window?.rootViewController = vc
+        let vc = storyboard.instantiateViewController(withIdentifier: "MainView")
+        let nav = self.window?.rootViewController as? UINavigationController
+        nav?.pushViewController(vc, animated: animated)
+    }
+    
+    func goToWelcomeView(animated:Bool = true) {
+        let nav = self.window?.rootViewController as? UINavigationController
+        nav?.popToRootViewController(animated: animated)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

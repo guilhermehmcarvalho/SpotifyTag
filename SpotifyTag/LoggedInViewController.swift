@@ -12,6 +12,8 @@ class LoggedInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.isToolbarHidden = true
 
         // Do any additional setup after loading the view.
         
@@ -22,13 +24,10 @@ class LoggedInViewController: UIViewController {
                 print(name)
             }
         }
-        
-        SpotifyAPIHandler().getUsersAlbums()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     @IBAction func logoff(_ sender: Any) {

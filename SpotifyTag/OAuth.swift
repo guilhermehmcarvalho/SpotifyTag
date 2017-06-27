@@ -39,7 +39,7 @@ class OAuth {
         NetworkManager.shared.sessionManager.adapter = nil
         KeychainManager().deleteAccessToken()
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.goToMainView()
+        appDelegate.goToWelcomeView()
     }
 
 }

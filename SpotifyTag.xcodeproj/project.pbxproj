@@ -22,6 +22,8 @@
 		146481E11EFC3BA20028C0B1 /* SpotifyAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146481E01EFC3BA20028C0B1 /* SpotifyAPIHandler.swift */; };
 		14A09CBB1EF6AA080024C275 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A09CBA1EF6AA080024C275 /* Config.swift */; };
 		14A09CBF1EF6C7E10024C275 /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A09CBE1EF6C7E10024C275 /* OAuth.swift */; };
+		14AAB48D1F03043300519924 /* AlbumsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AAB48C1F03043300519924 /* AlbumsCollectionViewController.swift */; };
+		14AAB48F1F03045B00519924 /* AlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AAB48E1F03045B00519924 /* AlbumCollectionViewCell.swift */; };
 		3E0AEC4D3A736F9DF902C44E /* Pods_SpotifyTag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81353DB9695C1EE0049B0C0F /* Pods_SpotifyTag.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,8 @@
 		146481E01EFC3BA20028C0B1 /* SpotifyAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyAPIHandler.swift; sourceTree = "<group>"; };
 		14A09CBA1EF6AA080024C275 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		14A09CBE1EF6C7E10024C275 /* OAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth.swift; sourceTree = "<group>"; };
+		14AAB48C1F03043300519924 /* AlbumsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsCollectionViewController.swift; sourceTree = "<group>"; };
+		14AAB48E1F03045B00519924 /* AlbumCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCell.swift; sourceTree = "<group>"; };
 		3D5A9D1F67A8672D894B36B9 /* Pods-SpotifyTag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyTag.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpotifyTag/Pods-SpotifyTag.release.xcconfig"; sourceTree = "<group>"; };
 		81353DB9695C1EE0049B0C0F /* Pods_SpotifyTag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotifyTag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0102F174DDFBF1275AAA7DA /* Pods-SpotifyTag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyTag.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpotifyTag/Pods-SpotifyTag.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 				1408739B1EF6A20D00A191E9 /* AppDelegate.swift */,
 				14A09CBA1EF6AA080024C275 /* Config.swift */,
 				146481DB1EFC07AF0028C0B1 /* KeychainManager.swift */,
+				14AAB48E1F03045B00519924 /* AlbumCollectionViewCell.swift */,
 				146481E31EFD82920028C0B1 /* View Controllers */,
 				146481E21EFD82440028C0B1 /* Network */,
 			);
@@ -122,6 +127,7 @@
 			children = (
 				146481DE1EFC0FDC0028C0B1 /* LoggedInViewController.swift */,
 				1408739D1EF6A20D00A191E9 /* ViewController.swift */,
+				14AAB48C1F03043300519924 /* AlbumsCollectionViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -283,10 +289,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				142E7DAE1F00073400BE42D2 /* ErrorHandler.swift in Sources */,
+				14AAB48D1F03043300519924 /* AlbumsCollectionViewController.swift in Sources */,
 				146481E11EFC3BA20028C0B1 /* SpotifyAPIHandler.swift in Sources */,
 				1408739E1EF6A20D00A191E9 /* ViewController.swift in Sources */,
 				142E7DAB1EFFD67900BE42D2 /* CoreDataHandler.swift in Sources */,
 				14A09CBB1EF6AA080024C275 /* Config.swift in Sources */,
+				14AAB48F1F03045B00519924 /* AlbumCollectionViewCell.swift in Sources */,
 				14A09CBF1EF6C7E10024C275 /* OAuth.swift in Sources */,
 				146481DA1EF71C7A0028C0B1 /* NetworkManager.swift in Sources */,
 				146481D81EF6F0BC0028C0B1 /* AccessTokenAdapter.swift in Sources */,
