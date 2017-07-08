@@ -11,12 +11,7 @@ import Sync
 
 class CoreDataHandler {
     
-    var dataStack: DataStack
-    
-    convenience init() {
-        let stack = DataStack(modelName: "SpotifyTag")
-        self.init(dataStack: stack)
-    }
+    var dataStack:DataStack
     
     // Dependency injection for testing
     init(dataStack: DataStack) {
@@ -30,15 +25,40 @@ class CoreDataHandler {
         return entities
     }
     
-    internal func saveEntity<T>(json:[[String:Any]], name:String,
-                             completionHandler: (([T]?) -> ())? = nil //Optional completion handler passing saved object
-        )
-        where T: NSManagedObject {
+    internal func replaceEntities<T>(json:[[String:Any]], name:String,
+                             completionHandler: (([T]?) -> ())? = nil //Optional completion handler passing saved objects
+        ) where T: NSManagedObject
+    {
         self.dataStack.sync(json, inEntityNamed: name) { (error) in
             if error != nil {
                 print(error!)
             }
         
+            if completionHandler != nil {
+                let e = self.getEntity(entity: name) as? [T]
+                completionHandler!(e)
+            }
+            
+        }
+    }
+    
+    internal func appendEntities<T>(json:[[String:Any]], name:String,
+                                 completionHandler: (([T]?) -> ())? = nil //Optional completion handler passing saved objects
+        ) where T: NSManagedObject
+    {
+        var appJson = json;
+        if let oldents = self.getEntity(entity: name) as? [T] {
+            for entity in oldents {
+                appJson.append(entity.export())
+            }
+        }
+        
+        
+        self.dataStack.sync(appJson, inEntityNamed: name) { (error) in
+            if error != nil {
+                print(error!)
+            }
+            
             if completionHandler != nil {
                 let e = self.getEntity(entity: name) as? [T]
                 completionHandler!(e)

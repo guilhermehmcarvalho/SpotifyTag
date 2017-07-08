@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00410A5DA01956B14EBA474C4EFD7A64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3EC084436589EE3891E2E29182155DA /* Foundation.framework */; };
 		006E33F2D4BBF271402C802F0EED9A32 /* Dictionary_Initializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6638DEFE3C9A4BE58475823C66F5A77 /* Dictionary_Initializers.swift */; };
 		015B96AF0470D025EDCE4D16DE375264 /* NSPropertyDescription+Sync.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C11A58867194027A275F20F6C10E51 /* NSPropertyDescription+Sync.m */; };
 		01AA72227E769F138BE1B2569EFE0C45 /* SPTPartialObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DAE3FA0CE9BD5E4335EAC01CE7C9C1B /* SPTPartialObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01F2CF2264BBC3094476F71BBBFD9C0E /* NSManagedObject+PropertyMapperHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = B6991B9590003D304237FE30AF22771C /* NSManagedObject+PropertyMapperHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0619FC06B3564E9E92F2DBA858321782 /* Pods-SpotifyTag-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1FE70D527347E09409D601E8D2F01F1 /* Pods-SpotifyTag-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08A83C4C5EC98766B0C1B105875C6CD2 /* Pods-SpotifyTag-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB75587CE2C80CB376856E7C18D7D617 /* Pods-SpotifyTag-dummy.m */; };
+		04A92717A4766F1C1FC4803FA300EB2D /* Pods-SpotifyTagTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CC8CC55208987C4DA7681613334E34 /* Pods-SpotifyTagTests-dummy.m */; };
+		0619FC06B3564E9E92F2DBA858321782 /* Pods-SpotifyTag-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A479AEF73A769C39B0BFCD0614B37E5 /* Pods-SpotifyTag-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08A83C4C5EC98766B0C1B105875C6CD2 /* Pods-SpotifyTag-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 980991A120A3557196FD6483803E9845 /* Pods-SpotifyTag-dummy.m */; };
+		09EB9999AC19CDDDA153779F1E7756DA /* Pods-SpotifyTagTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B030363BB6A37D20642CD73D166879 /* Pods-SpotifyTagTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A3CC403916CDDAFE16FDF6CE281B113 /* SPTAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 741BBE8DCD2BB031C8785C6DF9BB276C /* SPTAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0C381205D7FC3EA65E96C6A346036AEE /* SPTAudioPlaybackTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F64CAA9833B625ABD43E09206C3D5B2 /* SPTAudioPlaybackTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0E690D34907751E7B667BA12FC619B6C /* SPTArtist.h in Headers */ = {isa = PBXBuildFile; fileRef = A646EADCBE53B5975A35635DD3F8C71E /* SPTArtist.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -170,6 +173,13 @@
 			remoteGlobalIDString = 922AD472F7759965AF32DD3BBDA44192;
 			remoteInfo = Sync;
 		};
+		6E5269E0F97C4FF72A8508AEB1100BAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 922AD472F7759965AF32DD3BBDA44192;
+			remoteInfo = Sync;
+		};
 		D979C23A2855B064378EB24C29E1C27D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -188,43 +198,49 @@
 
 /* Begin PBXFileReference section */
 		00AA4FF7EA3FBFFBBC3F9A2815EABEC5 /* NSManagedObject+PropertyMapperHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+PropertyMapperHelpers.m"; path = "Source/PropertyMapper/NSManagedObject+PropertyMapperHelpers.m"; sourceTree = "<group>"; };
-		01563FB1504B80DA72A21F0A956808F4 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kingfisher.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		036575F6532716FF91EA1E51EE269FE4 /* ImagePrefetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePrefetcher.swift; path = Sources/ImagePrefetcher.swift; sourceTree = "<group>"; };
 		0563B761A384384B65954C95E1780A4B /* NSEntityDescription+PrimaryKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSEntityDescription+PrimaryKey.m"; path = "Source/PrimaryKey/NSEntityDescription+PrimaryKey.m"; sourceTree = "<group>"; };
 		05D07FECCD66F73BB17E7212D079A3D8 /* Spotify-iOS-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spotify-iOS-SDK-prefix.pch"; sourceTree = "<group>"; };
 		07C8289776B776791A096E120D01E00B /* DataFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataFilter.swift; path = Source/DataFilter/DataFilter.swift; sourceTree = "<group>"; };
 		07D4F7EAF199D8CF218D0B75EEACF03B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		0CBAFB7607F052881C8FEDB440B03235 /* Pods-SpotifyTagTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpotifyTagTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		0DEB61F9A29E5BD27FB080062D6C4418 /* Spotify-iOS-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Spotify-iOS-SDK.xcconfig"; sourceTree = "<group>"; };
 		1183DD213F851B121053CE03904B21C2 /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Empty.m; sourceTree = "<group>"; };
-		12F9F430F75C285E8CF033A4F6408CB8 /* Pods-SpotifyTag-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SpotifyTag-acknowledgements.markdown"; sourceTree = "<group>"; };
 		14C2CCE00C3058823D8EFE2ADA064BAC /* Locksmith-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Locksmith-umbrella.h"; sourceTree = "<group>"; };
 		15255845908B57D7A2981352F2A356C8 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		154CACB3475C8F4628B002FF38BF2CCE /* Pods-SpotifyTagTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SpotifyTagTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		15D6F2560948160A031F783E57904056 /* String+MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+MD5.swift"; path = "Sources/String+MD5.swift"; sourceTree = "<group>"; };
 		177231E435DAF0C2A2A17D1FF1A39451 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		1B8491728AB566198D7CF1AE727FC18A /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		1DAE3FA0CE9BD5E4335EAC01CE7C9C1B /* SPTPartialObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SPTPartialObject.h; sourceTree = "<group>"; };
 		20C11A58867194027A275F20F6C10E51 /* NSPropertyDescription+Sync.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPropertyDescription+Sync.m"; path = "Source/Sync/NSPropertyDescription+Sync.m"; sourceTree = "<group>"; };
+		2554E55BD9055DD7A708E88FADF60F51 /* Pods-SpotifyTag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpotifyTag.debug.xcconfig"; sourceTree = "<group>"; };
+		27CC8CC55208987C4DA7681613334E34 /* Pods-SpotifyTagTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SpotifyTagTests-dummy.m"; sourceTree = "<group>"; };
 		2839BC80AC03F1A8CBC0923E3B54EB8E /* ImageProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProcessor.swift; path = Sources/ImageProcessor.swift; sourceTree = "<group>"; };
 		29912AD51E61FA0FBCEDC603B5CE42CD /* SPTPartialAlbum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SPTPartialAlbum.h; sourceTree = "<group>"; };
 		2BE8DCE1A1B979AA9304C89F1DFB7F5E /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/ImageDownloader.swift; sourceTree = "<group>"; };
-		2C66C67E289E623B35E097555D27BC85 /* Sync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Sync.framework; path = Sync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D066F73E1ABD79244121805112E61AB /* SPTImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SPTImage.h; sourceTree = "<group>"; };
 		2E5057DD0A5B44663F11FBC7C2A67681 /* Kingfisher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kingfisher-dummy.m"; sourceTree = "<group>"; };
+		3083F4CA79E61C79B4CB13B00D3A0C3D /* Pods-SpotifyTagTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpotifyTagTests.debug.xcconfig"; sourceTree = "<group>"; };
 		30E4C0311B05E8A8772515D9D5B06EFE /* SPTPartialTrack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SPTPartialTrack.h; sourceTree = "<group>"; };
-		31D595BDF733DE79DF8DDC5915A28547 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		324C9CF42E27FEF592423683D2E298D1 /* Sync+NSPersistentContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Sync+NSPersistentContainer.swift"; path = "Source/Sync/Sync+NSPersistentContainer.swift"; sourceTree = "<group>"; };
 		32C854C89B4843747A68BFF140367F88 /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Box.swift; sourceTree = "<group>"; };
 		336369141A9718CDCDA81FB6862E91FD /* RequestModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestModifier.swift; path = Sources/RequestModifier.swift; sourceTree = "<group>"; };
 		33BA51CEC6E67378E7B5BBDA2666CCB3 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		35B030363BB6A37D20642CD73D166879 /* Pods-SpotifyTagTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SpotifyTagTests-umbrella.h"; sourceTree = "<group>"; };
+		35B3FB523060153A7E886BF8D6E1DCBA /* Pods-SpotifyTag-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SpotifyTag-acknowledgements.markdown"; sourceTree = "<group>"; };
 		38A92D7DA3A64365026238C2D03A669A /* SPTCoreAudioController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SPTCoreAudioController.h; sourceTree = "<group>"; };
 		39A5CD528DFBF18CBC170B4D04EF8F55 /* Locksmith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Locksmith.h; path = Source/Locksmith.h; sourceTree = "<group>"; };
 		3BF6A000039ACFECCA7BCAF8402E216C /* DataStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataStack.swift; path = Source/DataStack/DataStack.swift; sourceTree = "<group>"; };
 		3D493728914187FE5274141D01B8BE74 /* SpPlaybackEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SpPlaybackEvent.h; sourceTree = "<group>"; };
 		40996D2A50B4B36D6A03794B4DC67D03 /* SPTAudioStreamingController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SPTAudioStreamingController.h; sourceTree = "<group>"; };
+		43B4F4AB52AB0F227636A0D23171F59A /* Pods_SpotifyTagTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SpotifyTagTests.framework; path = "Pods-SpotifyTagTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4450EAAB40EA3E80FC57A7C286E4A07F /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kingfisher.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		463B631899BF8695E8A94D3386D9D9BB /* Kingfisher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kingfisher.h; path = Sources/Kingfisher.h; sourceTree = "<group>"; };
 		473C9FF145E2A4A50A9F5E438C9BDC49 /* Kingfisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-umbrella.h"; sourceTree = "<group>"; };
 		473CAB780258B2CC988A70914DE9DE25 /* Sync-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Sync-umbrella.h"; sourceTree = "<group>"; };
 		4BE455915461BECA47617944B4E83EE2 /* SPTUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SPTUser.h; sourceTree = "<group>"; };
+		4CA3E8BEAB174092D9E9235DC1979EBE /* Locksmith.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Locksmith.framework; path = Locksmith.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D60863E28F7D7FDE22016398542D6BB /* Sync.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Sync.h; path = Source/Sync.h; sourceTree = "<group>"; };
 		4E186516B8E22A890CA1D55501451FBE /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Kingfisher.swift"; path = "Sources/UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
 		53E0A0B5D2BA33137B96FB73225699AC /* Spotify-iOS-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Spotify-iOS-SDK-dummy.m"; sourceTree = "<group>"; };
@@ -232,10 +248,12 @@
 		5457DD09E4062ECE34D3158928275DDF /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Sync/Result.swift; sourceTree = "<group>"; };
 		54ACB1D094FEB65DA58BAEF65C22DAF1 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		5507186584CCD9C494298D9D1CE39997 /* Indicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Indicator.swift; path = Sources/Indicator.swift; sourceTree = "<group>"; };
+		581D3E97EE2EB08E36EC2DEE18348EBA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		583768C6ED6B2945FD24283542723B91 /* SPTSavedTrack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SPTSavedTrack.h; sourceTree = "<group>"; };
 		5A143E936D8C830D4B0F5155B22BF472 /* SPTPlaylistTrack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SPTPlaylistTrack.h; sourceTree = "<group>"; };
 		5AB5DF575901B166C694FCA93EE21993 /* Spotify-iOS-SDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Spotify-iOS-SDK.modulemap"; sourceTree = "<group>"; };
 		5B7DBC763D2A42E51C2C68082629B475 /* SPTPlaybackState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SPTPlaybackState.h; sourceTree = "<group>"; };
+		5D4368339060749B4F4553BDA2105307 /* Pods-SpotifyTagTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpotifyTagTests-resources.sh"; sourceTree = "<group>"; };
 		5E79C49E38F7233BAF25B22157E50201 /* ImageTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageTransition.swift; path = Sources/ImageTransition.swift; sourceTree = "<group>"; };
 		629BEF9D0271756EC4F965AC6FF9928C /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		64083335736DC2BEC9C7F57AB05B2DF6 /* SPTSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SPTSearch.h; sourceTree = "<group>"; };
@@ -243,7 +261,7 @@
 		6707FE791271ED29EB5810D461DC0267 /* Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kingfisher.swift; path = Sources/Kingfisher.swift; sourceTree = "<group>"; };
 		67520564F36A0C5FFF20251470DF696B /* Sync-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Sync-prefix.pch"; sourceTree = "<group>"; };
 		697C3BA90DE9CC011398CBDD6F12C083 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		6B032F8D2F5ADC266963B16052A66DB6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A479AEF73A769C39B0BFCD0614B37E5 /* Pods-SpotifyTag-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SpotifyTag-umbrella.h"; sourceTree = "<group>"; };
 		6BC786FBDD6D5FBF245347A05C63B5B2 /* Sync.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Sync.modulemap; sourceTree = "<group>"; };
 		6C71A3D1403FE0131A745EFDA0CC99DF /* libSpotifyMetadata.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libSpotifyMetadata.a; sourceTree = "<group>"; };
 		6EF5B8CF288B851CDA18C8EA88537591 /* NSDate+PropertyMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+PropertyMapper.h"; path = "Source/DateParser/NSDate+PropertyMapper.h"; sourceTree = "<group>"; };
@@ -269,18 +287,22 @@
 		8E593A78E30AEAABBCF30E069CA33780 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		8EB30605F94341830EA3F82B1B911FAF /* SPTPartialPlaylist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SPTPartialPlaylist.h; sourceTree = "<group>"; };
 		8EE1451298B623E96AF70EA275838031 /* SPTTrackProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SPTTrackProvider.h; sourceTree = "<group>"; };
+		8EFD0CBEF285FD2DA830C5389B90E168 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FFB53A73D40762B52CD51BE36AF9A6E /* Inflections.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Inflections.h; path = Source/Inflections/Inflections.h; sourceTree = "<group>"; };
-		90B48C8CC02C94D21169370D9E45BEDB /* Pods-SpotifyTag-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpotifyTag-acknowledgements.plist"; sourceTree = "<group>"; };
+		91805985A83473AFC0EA7B3C6173AD52 /* Pods-SpotifyTag-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpotifyTag-resources.sh"; sourceTree = "<group>"; };
+		92A2ECBCF443E2402550D338AE884848 /* Pods-SpotifyTag.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SpotifyTag.modulemap"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93C30AC774547E7C02D951AFF0701543 /* Sync+Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Sync+Helpers.swift"; path = "Source/Sync/Sync+Helpers.swift"; sourceTree = "<group>"; };
-		93E70407DD40D3CCE246B455462951AB /* Spotify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Spotify.framework; path = "Spotify-iOS-SDK.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94DD0165737522F4EE3666D731E3856C /* Pods-SpotifyTag-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpotifyTag-acknowledgements.plist"; sourceTree = "<group>"; };
 		96A9F82D77719069E3A3DB44DED80DD2 /* Sync+DataStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Sync+DataStack.swift"; path = "Source/Sync/Sync+DataStack.swift"; sourceTree = "<group>"; };
 		96F33A755A4105F0D1E449C3FFF838AB /* Kingfisher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-prefix.pch"; sourceTree = "<group>"; };
 		9745881D5D86D416E9AF73B3C2B76B19 /* Inflections.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Inflections.m; path = Source/Inflections/Inflections.m; sourceTree = "<group>"; };
-		97871C8A79CF9E71E3A7BE623E80A322 /* Pods-SpotifyTag-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpotifyTag-frameworks.sh"; sourceTree = "<group>"; };
 		97D6BA5F03317CFAA2C6467180DB174D /* NSManagedObject+Sync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSManagedObject+Sync.swift"; path = "Source/Sync/NSManagedObject+Sync.swift"; sourceTree = "<group>"; };
+		980991A120A3557196FD6483803E9845 /* Pods-SpotifyTag-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SpotifyTag-dummy.m"; sourceTree = "<group>"; };
 		9A435E76FCEBB9A8C438A455DE65835A /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		9BACA07F3FE1694E1C914BB2F3E5DF58 /* Pods-SpotifyTag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpotifyTag.release.xcconfig"; sourceTree = "<group>"; };
 		9FDFD8DB93D990416957527C0433750D /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		A17FA20667F71D2C4A1D13EA22C1CB29 /* Pods-SpotifyTagTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SpotifyTagTests.modulemap"; sourceTree = "<group>"; };
 		A1D02CA462F33BCAE1AAC3EB29A3C0BB /* SpotifyAudioPlayback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SpotifyAudioPlayback.h; sourceTree = "<group>"; };
 		A1E71A1F2470F25F53E2E9696EE245FC /* SpotifyMetadata.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SpotifyMetadata.h; sourceTree = "<group>"; };
 		A27C5F776A46CB7E9479112C9F9664EA /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Filter.swift; sourceTree = "<group>"; };
@@ -295,39 +317,40 @@
 		A78930BD37BA72E8A0CEA5F39D88274D /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/KingfisherManager.swift; sourceTree = "<group>"; };
 		AAC82665E7DAA1DBFEF29CAD6C6B3147 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		AB6B35B21E6DA1DA8C211E092BFE2BDC /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		AB75587CE2C80CB376856E7C18D7D617 /* Pods-SpotifyTag-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SpotifyTag-dummy.m"; sourceTree = "<group>"; };
 		AB8C6EFF2967A89493E3837B7CD8BF75 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC4F32698DDA8921A933AA2365AC7600 /* SpotifyAuthentication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SpotifyAuthentication.h; sourceTree = "<group>"; };
 		ACC6230A547498CB69F1CBA7917ED632 /* NSEntityDescription+Sync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSEntityDescription+Sync.swift"; path = "Source/Sync/NSEntityDescription+Sync.swift"; sourceTree = "<group>"; };
 		B25FF45A3C78DBA73691B971007F114C /* Sync+NSManagedObjectContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Sync+NSManagedObjectContext.swift"; path = "Source/Sync/Sync+NSManagedObjectContext.swift"; sourceTree = "<group>"; };
+		B280DC378B39E08B935366D4AF1F8D9A /* Spotify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Spotify.framework; path = "Spotify-iOS-SDK.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2B88C809C437181FE0DD785FFC5AFE0 /* libSpotifyAuthentication.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libSpotifyAuthentication.a; sourceTree = "<group>"; };
 		B36456F8C6D61C0B1E1CFEB3749C57F1 /* Sync.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Sync.xcconfig; sourceTree = "<group>"; };
+		B366DA8760A7FABCE92EB0577124CEE7 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5AC050AFB811B5E6F0D0E604A252577 /* Locksmith-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Locksmith-prefix.pch"; sourceTree = "<group>"; };
 		B68A6EE21A85EC1E0D664BEDFD4777AD /* Locksmith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Locksmith.swift; path = Source/Locksmith.swift; sourceTree = "<group>"; };
 		B6991B9590003D304237FE30AF22771C /* NSManagedObject+PropertyMapperHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+PropertyMapperHelpers.h"; path = "Source/PropertyMapper/NSManagedObject+PropertyMapperHelpers.h"; sourceTree = "<group>"; };
-		B7158FBA45B2FE694E2E4E2DFBB753C7 /* Pods-SpotifyTag-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpotifyTag-resources.sh"; sourceTree = "<group>"; };
 		B749F87B622A45A27D7047F3088FB0F2 /* SPTPlaylistSnapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SPTPlaylistSnapshot.h; sourceTree = "<group>"; };
 		B7B5495DF86FCDF11786E5BD170D551B /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherOptionsInfo.swift; path = Sources/KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
 		BBB81C63C631D4CA3313F7C5C6064B49 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Sources/Image.swift; sourceTree = "<group>"; };
 		BC36E78371857BA27AFB2BD799CB3FD2 /* PropertyMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PropertyMapper.h; path = Source/PropertyMapper/PropertyMapper.h; sourceTree = "<group>"; };
 		BE769648C7930FEEDF5FBB7961C57DED /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Sources/Resource.swift; sourceTree = "<group>"; };
 		C02219F9B461F0D0CF1BBAB08D0E0E87 /* SPTFeaturedPlaylistList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SPTFeaturedPlaylistList.h; sourceTree = "<group>"; };
-		C232EA4001285BB66EEAD4198676E473 /* Pods_SpotifyTag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SpotifyTag.framework; path = "Pods-SpotifyTag.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C302C1F80F14BAC5405FA461D1E02E36 /* Locksmith-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Locksmith-dummy.m"; sourceTree = "<group>"; };
 		C30468CCEE1933CF65C5DC35DDDCEC35 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
 		C3DF753E8A5187D6B5E9E53A1DDB2B96 /* NSDate+PropertyMapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+PropertyMapper.m"; path = "Source/DateParser/NSDate+PropertyMapper.m"; sourceTree = "<group>"; };
 		C3EC084436589EE3891E2E29182155DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		C461506F5541DC3D57BEC052DB0C6946 /* NSManagedObject+Export.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSManagedObject+Export.swift"; path = "Source/PropertyMapper/NSManagedObject+Export.swift"; sourceTree = "<group>"; };
+		C5DC4DB27A0D92EFE4806F074C304C04 /* Pods-SpotifyTag-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpotifyTag-frameworks.sh"; sourceTree = "<group>"; };
 		C65EA719C12E11095A0F266B43C6562C /* SPTAuthViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SPTAuthViewController.h; sourceTree = "<group>"; };
-		C6888F524276A2D6B8DDBBAB38E1029D /* Pods-SpotifyTag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpotifyTag.release.xcconfig"; sourceTree = "<group>"; };
 		CB47C9F90696B90EE1BCE25AB9B9A289 /* PropertyMapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PropertyMapper.m; path = Source/PropertyMapper/PropertyMapper.m; sourceTree = "<group>"; };
 		CC6B4AA637B865F4CE481BB77D3889F6 /* LocksmithInternetProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocksmithInternetProtocol.swift; path = Source/LocksmithInternetProtocol.swift; sourceTree = "<group>"; };
 		CDB0E4D77EA3E90236E035F1B734B0ED /* Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Kingfisher.modulemap; sourceTree = "<group>"; };
+		D0CCD0F4423A0B064803DE28134767C0 /* Sync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Sync.framework; path = Sync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D16B831E96C3AFE4563C8F16158F55CA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		D1A1BDF2B9B7E86EF6A62E729C846DFD /* SPTRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SPTRequest.h; sourceTree = "<group>"; };
 		D1AC9DF3CB20BC355074582907595C54 /* NSPropertyDescription+Sync.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPropertyDescription+Sync.h"; path = "Source/Sync/NSPropertyDescription+Sync.h"; sourceTree = "<group>"; };
 		D2B2D0631F10EF7B225BBFF7F10C2517 /* SPTAlbum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SPTAlbum.h; sourceTree = "<group>"; };
 		D4BA05C0A6F80E432D7E42643B405A71 /* SPTMetadataTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SPTMetadataTypes.h; sourceTree = "<group>"; };
+		D662A0D31BCD5C4D0A48B063A4797958 /* Pods-SpotifyTagTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpotifyTagTests-frameworks.sh"; sourceTree = "<group>"; };
 		D74DF5B330303E3B95B44D998B9E1980 /* libSpotifyAudioPlayback.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libSpotifyAudioPlayback.a; sourceTree = "<group>"; };
 		D83D3DA69E72CD8C9E3B2531C4E59E5E /* SPTDiskCaching.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SPTDiskCaching.h; sourceTree = "<group>"; };
 		D957A584C646D05460FAB5BE5C3A2BC4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -338,15 +361,14 @@
 		DEA052B2667E0477D39E3E94563A42F0 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		E351364420E6EB5A8A0CC89EEC31444D /* Sync-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Sync-dummy.m"; sourceTree = "<group>"; };
 		E3E5767093C1B27A795B380C3CDAFFBA /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		E500412530AD9AE48DD52944EA409A1B /* Pods-SpotifyTagTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpotifyTagTests.release.xcconfig"; sourceTree = "<group>"; };
 		E57307D6BA72CD0664DFE5FF611F6B42 /* LocksmithInternetAuthenticationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocksmithInternetAuthenticationType.swift; path = Source/LocksmithInternetAuthenticationType.swift; sourceTree = "<group>"; };
 		E74910BDE18E072F52FE3BA04A3A406E /* LocksmithAccessibleOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocksmithAccessibleOption.swift; path = Source/LocksmithAccessibleOption.swift; sourceTree = "<group>"; };
 		E79A69A64C3B98675E017B389676DA14 /* LocksmithError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocksmithError.swift; path = Source/LocksmithError.swift; sourceTree = "<group>"; };
+		EDAA93ECEF4E5E697C86BBAED555BC20 /* Pods_SpotifyTag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SpotifyTag.framework; path = "Pods-SpotifyTag.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC92B5482663052D1ED4D5EF9705E23 /* SPTPartialArtist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SPTPartialArtist.h; sourceTree = "<group>"; };
-		EDD153186A2D19422C48846DDDED5355 /* Pods-SpotifyTag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpotifyTag.debug.xcconfig"; sourceTree = "<group>"; };
 		EDF3BC0C7CB7DCCD844D087B2D42509C /* SPTPlaylistList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SPTPlaylistList.h; sourceTree = "<group>"; };
 		EFA89ADE725DD5FF3ACD498264404A4E /* TestCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TestCheck.swift; path = Source/TestCheck/TestCheck.swift; sourceTree = "<group>"; };
-		F08DF4B8E9D441839804179987073CA7 /* Locksmith.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Locksmith.framework; path = Locksmith.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1FE70D527347E09409D601E8D2F01F1 /* Pods-SpotifyTag-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SpotifyTag-umbrella.h"; sourceTree = "<group>"; };
 		F51704CA01051927513D22F51A389876 /* SPTFollow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SPTFollow.h; sourceTree = "<group>"; };
 		F6638DEFE3C9A4BE58475823C66F5A77 /* Dictionary_Initializers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dictionary_Initializers.swift; path = Source/Dictionary_Initializers.swift; sourceTree = "<group>"; };
 		F7E9B575C2F67553AD1E778F454CE20D /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
@@ -358,10 +380,17 @@
 		FB9BB6C7C7950D3535A20E8C5C1C5449 /* SPTConnectButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SPTConnectButton.h; sourceTree = "<group>"; };
 		FC5CBEBD4D44C008014A032F50E8B9A4 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		FC68BB39FBCA86DFE6A4E7A6D08231DD /* Spotify-iOS-SDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spotify-iOS-SDK-umbrella.h"; sourceTree = "<group>"; };
-		FF1C5CEB9444AD1E8E649419EED1D5B4 /* Pods-SpotifyTag.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SpotifyTag.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		46FA64058C7CCCF09853EB96E4352CC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00410A5DA01956B14EBA474C4EFD7A64 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58D96E0199E44646D1C72CA0C0F2A88D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -485,12 +514,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		0596E7AC5FDBEB41C9F3B061FD18B81A /* Targets Support Files */ = {
+		122ED381E5E4BE7C414C1737F977A0B3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9672CF5FED0B35C20732D4B73E8714F4 /* Pods-SpotifyTag */,
+				B366DA8760A7FABCE92EB0577124CEE7 /* Alamofire.framework */,
+				4450EAAB40EA3E80FC57A7C286E4A07F /* Kingfisher.framework */,
+				4CA3E8BEAB174092D9E9235DC1979EBE /* Locksmith.framework */,
+				EDAA93ECEF4E5E697C86BBAED555BC20 /* Pods_SpotifyTag.framework */,
+				43B4F4AB52AB0F227636A0D23171F59A /* Pods_SpotifyTagTests.framework */,
+				B280DC378B39E08B935366D4AF1F8D9A /* Spotify.framework */,
+				D0CCD0F4423A0B064803DE28134767C0 /* Sync.framework */,
 			);
-			name = "Targets Support Files";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		12860AC27EABBF67911517FA84B57AE7 /* Playback */ = {
@@ -507,19 +542,6 @@
 				929C8661DB75727F2FDFD018E27A87CE /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		219F46C415DE5D57C1094514CE750259 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				31D595BDF733DE79DF8DDC5915A28547 /* Alamofire.framework */,
-				01563FB1504B80DA72A21F0A956808F4 /* Kingfisher.framework */,
-				F08DF4B8E9D441839804179987073CA7 /* Locksmith.framework */,
-				C232EA4001285BB66EEAD4198676E473 /* Pods_SpotifyTag.framework */,
-				93E70407DD40D3CCE246B455462951AB /* Spotify.framework */,
-				2C66C67E289E623B35E097555D27BC85 /* Sync.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		42390B6B73D8A0F04BD2294FA301EEB9 /* Support Files */ = {
@@ -592,6 +614,24 @@
 			path = Kingfisher;
 			sourceTree = "<group>";
 		};
+		72ED6446F85BDB0E0A356EADB291F16A /* Pods-SpotifyTag */ = {
+			isa = PBXGroup;
+			children = (
+				8EFD0CBEF285FD2DA830C5389B90E168 /* Info.plist */,
+				92A2ECBCF443E2402550D338AE884848 /* Pods-SpotifyTag.modulemap */,
+				35B3FB523060153A7E886BF8D6E1DCBA /* Pods-SpotifyTag-acknowledgements.markdown */,
+				94DD0165737522F4EE3666D731E3856C /* Pods-SpotifyTag-acknowledgements.plist */,
+				980991A120A3557196FD6483803E9845 /* Pods-SpotifyTag-dummy.m */,
+				C5DC4DB27A0D92EFE4806F074C304C04 /* Pods-SpotifyTag-frameworks.sh */,
+				91805985A83473AFC0EA7B3C6173AD52 /* Pods-SpotifyTag-resources.sh */,
+				6A479AEF73A769C39B0BFCD0614B37E5 /* Pods-SpotifyTag-umbrella.h */,
+				2554E55BD9055DD7A708E88FADF60F51 /* Pods-SpotifyTag.debug.xcconfig */,
+				9BACA07F3FE1694E1C914BB2F3E5DF58 /* Pods-SpotifyTag.release.xcconfig */,
+			);
+			name = "Pods-SpotifyTag";
+			path = "Target Support Files/Pods-SpotifyTag";
+			sourceTree = "<group>";
+		};
 		76470A7F2AD84DBE7CED49CCD4243C4C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -606,8 +646,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
 				056C472F67776537D7539269782AB64E /* Pods */,
-				219F46C415DE5D57C1094514CE750259 /* Products */,
-				0596E7AC5FDBEB41C9F3B061FD18B81A /* Targets Support Files */,
+				122ED381E5E4BE7C414C1737F977A0B3 /* Products */,
+				99539E3D7B69BA8391C19F012DD30350 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -631,24 +671,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		9672CF5FED0B35C20732D4B73E8714F4 /* Pods-SpotifyTag */ = {
-			isa = PBXGroup;
-			children = (
-				6B032F8D2F5ADC266963B16052A66DB6 /* Info.plist */,
-				FF1C5CEB9444AD1E8E649419EED1D5B4 /* Pods-SpotifyTag.modulemap */,
-				12F9F430F75C285E8CF033A4F6408CB8 /* Pods-SpotifyTag-acknowledgements.markdown */,
-				90B48C8CC02C94D21169370D9E45BEDB /* Pods-SpotifyTag-acknowledgements.plist */,
-				AB75587CE2C80CB376856E7C18D7D617 /* Pods-SpotifyTag-dummy.m */,
-				97871C8A79CF9E71E3A7BE623E80A322 /* Pods-SpotifyTag-frameworks.sh */,
-				B7158FBA45B2FE694E2E4E2DFBB753C7 /* Pods-SpotifyTag-resources.sh */,
-				F1FE70D527347E09409D601E8D2F01F1 /* Pods-SpotifyTag-umbrella.h */,
-				EDD153186A2D19422C48846DDDED5355 /* Pods-SpotifyTag.debug.xcconfig */,
-				C6888F524276A2D6B8DDBBAB38E1029D /* Pods-SpotifyTag.release.xcconfig */,
-			);
-			name = "Pods-SpotifyTag";
-			path = "Target Support Files/Pods-SpotifyTag";
-			sourceTree = "<group>";
-		};
 		96B443A794AAEEDFEE4ED4A9162B1179 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -661,6 +683,15 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Sync";
+			sourceTree = "<group>";
+		};
+		99539E3D7B69BA8391C19F012DD30350 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				72ED6446F85BDB0E0A356EADB291F16A /* Pods-SpotifyTag */,
+				C6A345DD51362B2D4A2405FCB887E471 /* Pods-SpotifyTagTests */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		A7F4A6D52E289CCDFA3068E0337DDC44 /* Sync */ = {
@@ -705,6 +736,24 @@
 				D969313B0E4D873D9E5D15F2A943B8A5 /* Frameworks */,
 			);
 			name = Authentication;
+			sourceTree = "<group>";
+		};
+		C6A345DD51362B2D4A2405FCB887E471 /* Pods-SpotifyTagTests */ = {
+			isa = PBXGroup;
+			children = (
+				581D3E97EE2EB08E36EC2DEE18348EBA /* Info.plist */,
+				A17FA20667F71D2C4A1D13EA22C1CB29 /* Pods-SpotifyTagTests.modulemap */,
+				154CACB3475C8F4628B002FF38BF2CCE /* Pods-SpotifyTagTests-acknowledgements.markdown */,
+				0CBAFB7607F052881C8FEDB440B03235 /* Pods-SpotifyTagTests-acknowledgements.plist */,
+				27CC8CC55208987C4DA7681613334E34 /* Pods-SpotifyTagTests-dummy.m */,
+				D662A0D31BCD5C4D0A48B063A4797958 /* Pods-SpotifyTagTests-frameworks.sh */,
+				5D4368339060749B4F4553BDA2105307 /* Pods-SpotifyTagTests-resources.sh */,
+				35B030363BB6A37D20642CD73D166879 /* Pods-SpotifyTagTests-umbrella.h */,
+				3083F4CA79E61C79B4CB13B00D3A0C3D /* Pods-SpotifyTagTests.debug.xcconfig */,
+				E500412530AD9AE48DD52944EA409A1B /* Pods-SpotifyTagTests.release.xcconfig */,
+			);
+			name = "Pods-SpotifyTagTests";
+			path = "Target Support Files/Pods-SpotifyTagTests";
 			sourceTree = "<group>";
 		};
 		CDD3BAAE2948A9348CDBA362A9C5C32F /* Support Files */ = {
@@ -810,6 +859,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C43409CBCC6AE938627046002AA929A1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09EB9999AC19CDDDA153779F1E7756DA /* Pods-SpotifyTagTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C7D24946D14505E766814105E9A91C0B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -902,7 +959,7 @@
 			);
 			name = "Spotify-iOS-SDK";
 			productName = "Spotify-iOS-SDK";
-			productReference = 93E70407DD40D3CCE246B455462951AB /* Spotify.framework */;
+			productReference = B280DC378B39E08B935366D4AF1F8D9A /* Spotify.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
@@ -919,7 +976,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 31D595BDF733DE79DF8DDC5915A28547 /* Alamofire.framework */;
+			productReference = B366DA8760A7FABCE92EB0577124CEE7 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		922AD472F7759965AF32DD3BBDA44192 /* Sync */ = {
@@ -936,7 +993,7 @@
 			);
 			name = Sync;
 			productName = Sync;
-			productReference = 2C66C67E289E623B35E097555D27BC85 /* Sync.framework */;
+			productReference = D0CCD0F4423A0B064803DE28134767C0 /* Sync.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C4944FEC314D1A66588651D006273ADE /* Kingfisher */ = {
@@ -953,7 +1010,7 @@
 			);
 			name = Kingfisher;
 			productName = Kingfisher;
-			productReference = 01563FB1504B80DA72A21F0A956808F4 /* Kingfisher.framework */;
+			productReference = 4450EAAB40EA3E80FC57A7C286E4A07F /* Kingfisher.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C7F727D48928BF47D913AFC48BB6A978 /* Locksmith */ = {
@@ -970,7 +1027,7 @@
 			);
 			name = Locksmith;
 			productName = Locksmith;
-			productReference = F08DF4B8E9D441839804179987073CA7 /* Locksmith.framework */;
+			productReference = 4CA3E8BEAB174092D9E9235DC1979EBE /* Locksmith.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CA3BF135BFEF5A0FBBF5F902F8C8F1F1 /* Pods-SpotifyTag */ = {
@@ -992,7 +1049,25 @@
 			);
 			name = "Pods-SpotifyTag";
 			productName = "Pods-SpotifyTag";
-			productReference = C232EA4001285BB66EEAD4198676E473 /* Pods_SpotifyTag.framework */;
+			productReference = EDAA93ECEF4E5E697C86BBAED555BC20 /* Pods_SpotifyTag.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DFB338DDF9467CF7667C73DD662D9961 /* Pods-SpotifyTagTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF14429E5E18BD78958A7F80CF645ADD /* Build configuration list for PBXNativeTarget "Pods-SpotifyTagTests" */;
+			buildPhases = (
+				7328AEB593B04D38FCA7E679A4A2D1D6 /* Sources */,
+				46FA64058C7CCCF09853EB96E4352CC2 /* Frameworks */,
+				C43409CBCC6AE938627046002AA929A1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				613045BA3851728C8B54F3A050470605 /* PBXTargetDependency */,
+			);
+			name = "Pods-SpotifyTagTests";
+			productName = "Pods-SpotifyTagTests";
+			productReference = 43B4F4AB52AB0F227636A0D23171F59A /* Pods_SpotifyTagTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1012,7 +1087,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 219F46C415DE5D57C1094514CE750259 /* Products */;
+			productRefGroup = 122ED381E5E4BE7C414C1737F977A0B3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -1020,6 +1095,7 @@
 				C4944FEC314D1A66588651D006273ADE /* Kingfisher */,
 				C7F727D48928BF47D913AFC48BB6A978 /* Locksmith */,
 				CA3BF135BFEF5A0FBBF5F902F8C8F1F1 /* Pods-SpotifyTag */,
+				DFB338DDF9467CF7667C73DD662D9961 /* Pods-SpotifyTagTests */,
 				1C720A37785DA07D91EB08B7CDA63975 /* Spotify-iOS-SDK */,
 				922AD472F7759965AF32DD3BBDA44192 /* Sync */,
 			);
@@ -1097,6 +1173,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7328AEB593B04D38FCA7E679A4A2D1D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A92717A4766F1C1FC4803FA300EB2D /* Pods-SpotifyTagTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		890E4BABED82AB6D5F577BA651D79FD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1154,6 +1238,12 @@
 			name = Locksmith;
 			target = C7F727D48928BF47D913AFC48BB6A978 /* Locksmith */;
 			targetProxy = 2AB0C3642B368D6FD6676F1BC9520C42 /* PBXContainerItemProxy */;
+		};
+		613045BA3851728C8B54F3A050470605 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Sync;
+			target = 922AD472F7759965AF32DD3BBDA44192 /* Sync */;
+			targetProxy = 6E5269E0F97C4FF72A8508AEB1100BAB /* PBXContainerItemProxy */;
 		};
 		783FF3ADCE14B1EA869723CB3A658431 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1221,6 +1311,45 @@
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		19C8D339950EC399522E86961D468260 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3083F4CA79E61C79B4CB13B00D3A0C3D /* Pods-SpotifyTagTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SpotifyTagTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SpotifyTagTests/Pods-SpotifyTagTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SpotifyTagTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -1294,7 +1423,7 @@
 		};
 		38700D3415AE304DA5F53712CF0AC19F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6888F524276A2D6B8DDBBAB38E1029D /* Pods-SpotifyTag.release.xcconfig */;
+			baseConfigurationReference = 9BACA07F3FE1694E1C914BB2F3E5DF58 /* Pods-SpotifyTag.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1332,7 +1461,7 @@
 		};
 		3B052C24765EBDAF4AC6E2668275FB56 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDD153186A2D19422C48846DDDED5355 /* Pods-SpotifyTag.debug.xcconfig */;
+			baseConfigurationReference = 2554E55BD9055DD7A708E88FADF60F51 /* Pods-SpotifyTag.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1403,6 +1532,44 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		48B091E079892808B29F19AB67272981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E500412530AD9AE48DD52944EA409A1B /* Pods-SpotifyTagTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SpotifyTagTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SpotifyTagTests/Pods-SpotifyTagTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SpotifyTagTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		491C82953D8DF5C2392641B9291A7590 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1731,6 +1898,15 @@
 			buildConfigurations = (
 				A794525992F2457D34942D108D9E942A /* Debug */,
 				20B5F4B4605A7E04AEE71183A359E092 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF14429E5E18BD78958A7F80CF645ADD /* Build configuration list for PBXNativeTarget "Pods-SpotifyTagTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19C8D339950EC399522E86961D468260 /* Debug */,
+				48B091E079892808B29F19AB67272981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

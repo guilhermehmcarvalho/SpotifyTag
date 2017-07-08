@@ -26,4 +26,9 @@ class AlbumCollectionViewCell: UICollectionViewCell {
         }
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.album = nil
+    }
+    
 }

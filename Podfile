@@ -14,3 +14,10 @@ pod 'Locksmith', '~> 3.0'
 pod 'Sync', '~> 3'
 
 end
+
+target 'SpotifyTagTests' do
+    use_frameworks!
+
+pod 'Sync', '~> 3'
+
+end

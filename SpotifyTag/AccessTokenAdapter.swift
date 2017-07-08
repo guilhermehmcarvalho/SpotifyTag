@@ -19,7 +19,7 @@ class AccessTokenAdapter: RequestAdapter {
     func adapt(_ urlRequest: URLRequest) throws -> URLRequest {
         var urlRequest = urlRequest
         
-        if let urlString = urlRequest.url?.absoluteString, urlString.hasPrefix(SpotifyBaseEndpoint) {
+        if let urlString = urlRequest.url?.absoluteString, urlString.hasPrefix(Config().SpotifyBaseEndpoint) {
             urlRequest.setValue("Bearer " + accessToken, forHTTPHeaderField: "Authorization")
         }
         

@@ -9,12 +9,14 @@
 import UIKit
 import CoreData
 import Spotify
+import Sync
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var auth = SPTAuth()
+    lazy var dataStack: DataStack = DataStack(modelName: "SpotifyTag")
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         

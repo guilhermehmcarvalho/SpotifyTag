@@ -16,7 +16,7 @@ class OAuth {
     internal func authorize(){
         let scope = [SPTAuthUserLibraryReadScope]
         
-        SPTAuth.defaultInstance().clientID = ClientID
+        SPTAuth.defaultInstance().clientID = Config().ClientID
         SPTAuth.defaultInstance().redirectURL = URL(string: Config().redirectURI)
         SPTAuth.defaultInstance().requestedScopes = scope
         if let loginURL = SPTAuth.defaultInstance().spotifyWebAuthenticationURL() {
